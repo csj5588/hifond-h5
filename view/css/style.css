@@ -1,0 +1,635 @@
+.draftLine1,.draftLine2,.copy1,.copy2,.tl-tr,.tl-tr2,.bl-br,.bl-br2,.i-t,.i-b,.r-m-t,.r-m-b,.slide-card,
+.t-enter,.l-enter,.r-enter,.b-enter,.opacity-enter{
+	animation-play-state: paused;
+}
+.loadingBox{
+	background-color: #fff;
+	position: fixed;
+	z-index: 9999;
+}
+.draftLine{
+	width: 55%;
+	height: 76%;
+	/*border: 1px solid red;*/
+	margin-left: 22.5%;
+	margin-top: 6%;
+	position: relative;
+}
+.copy{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	padding: 1px;
+}
+.draftLine1{
+	content: '';
+	position: absolute;
+	top: -10%;
+	left: 0;
+	display: block;
+	width: 1px;
+	/*height: 120%;*/
+	background: linear-gradient(to bottom, #ADADAD, #E1E1E1);
+	animation: draftLine 2s forwards;
+	animation-play-state: paused;
+}
+.copy1{
+	content: '';
+	position: absolute;
+	top: 0%;
+	left: -10%;
+	display: block;
+	/*width: 120%;*/
+	height: 1px;
+	background: linear-gradient(to right, #ADADAD, #E1E1E1);
+	animation: draftLineCopy 4s forwards;
+	animation-play-state: paused;
+}
+.draftLine2{
+	content: '';
+	position: absolute;
+	top: -10%;
+	right: 0;
+	display: block;
+	width: 1px;
+	/*height: 120%;*/
+	background: linear-gradient(to bottom, #ADADAD, #E1E1E1);
+	/*transform: rotate(90deg);*/
+	animation: draftLine 2s 0.5s forwards;
+	animation-play-state: paused;
+}
+.copy2{
+	content: '';
+	position: absolute;
+	bottom: 0%;
+	left: -10%;
+	display: block;
+	/*width: 120%;*/
+	height: 1px;
+	background: linear-gradient(to right, #ADADAD, #E1E1E1);
+	animation: draftLineCopy 2s 0.5s forwards;
+	animation-play-state: paused;
+}
+/* 最外层角标  */
+.draftLine .tl-tr{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 100%;
+}
+.draftLine .tl-tr{
+	position: absolute;
+	left: -4%;
+	top: -3.1vw;
+	display: block;
+	/*width: 16%;*/
+	height: 1px;
+	background: linear-gradient(to right, #ADADAD, #E1E1E1);
+	transform-origin: top left;
+	transform: rotate(38deg);
+	animation: draftLine-tl-tr 2s forwards;
+	animation-play-state: paused;
+}
+.draftLine .tl-tr2{
+	position: absolute;
+	right: -4%;
+	top: -3.1vw;
+	display: block;
+	/*width: 16%;*/
+	height: 1px;
+	background: linear-gradient(to left, #ADADAD, #E1E1E1);
+	animation: draftLine-tl-tr 2s 0.5s forwards;
+	animation-play-state: paused;
+	transform-origin: top right;
+	transform: rotate(-38deg);
+}
+.draftLine .bl-br{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: block;
+	width: 100%;
+}
+.draftLine .bl-br{
+	content: '';
+	position: absolute;
+	left: -4%;
+	bottom: -3.1vw;
+	display: block;
+	/*width: 16%;*/
+	height: 1px;
+	opacity: 0;
+	background: linear-gradient(to right, #ADADAD, #E1E1E1);
+	transform-origin: top left;
+	transform: rotate(-38deg);
+	animation: draftLine-tl-tr 2s 1s forwards;
+	animation-play-state: paused;
+}
+.draftLine .bl-br2{
+	content: '';
+	position: absolute;
+	right: -4%;
+	bottom: -3.1vw;
+	display: block;
+	/*width: 16%;*/
+	height: 1px;
+	background: linear-gradient(to left, #ADADAD, #E1E1E1);
+	animation: draftLine-tl-tr 2s 1.4s forwards;
+	transform-origin: top right;
+	transform: rotate(38deg);
+	animation-play-state: paused;
+}
+.draftLine .i-t{
+	position: absolute;
+	top: 11%;
+	left: -10%;
+	width: 0%;
+	height: 1px;
+	background: linear-gradient(to left,#E1E1E1, #ADADAD, #E1E1E1);
+	animation: draftLineCopy 2s 1.5s forwards;
+	animation-play-state: paused;
+}
+.draftLine .i-b{
+	position: absolute;
+	top: 70%;
+	left: -10%;
+	width: 0%;
+	height: 1px;
+	background: linear-gradient(to left,#E1E1E1, #ADADAD, #E1E1E1);
+	animation: draftLineCopy 2s 2s forwards;
+	animation-play-state: paused;
+}
+.draftLine .r-m-t{
+	position: absolute;
+	top: 30%;
+	right: -5%;
+	/*width: 17%;*/
+	height: 1px;
+	background: linear-gradient(to left,#E1E1E1, #ADADAD, #E1E1E1);
+	/*border: 1px solid red;*/
+	animation: draftLine-tl-tr 1s 2s forwards;
+	animation-play-state: paused;
+}
+.draftLine .r-m-b{
+	position: absolute;
+	top: 83%;
+	right: -5%;
+	/*width: 17%;*/
+	height: 1px;
+	background: linear-gradient(to left,#E1E1E1, #ADADAD, #E1E1E1);
+	/*border: 1px solid red;*/
+	animation: draftLine-tl-tr 1s 2s forwards;
+	animation-play-state: paused;
+}
+.draftLine .slide-card{
+	position: absolute;
+	top: 30%;
+	right: 1%;
+	width: 4%;
+	height: 53%;
+	border: 1px solid #ADADAD;
+	border-left: none;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	opacity: 0;
+	/*background: linear-gradient(to left,#E1E1E1, #ADADAD, #E1E1E1);*/
+	/*border: 1px solid red;*/
+	animation: fadeInRight 2s 3s forwards;
+	animation-play-state: paused;
+}
+/*最外层边框*/
+.outSildeBorder{
+	width: 96%;
+	height: 100%;
+	border: 1px solid #ADADAD;
+	border-radius: 15px;
+	position: relative;
+	padding: 1%;
+	/*overflow: hidden;*/
+}
+.midSildeBorder{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ADADAD;
+	border-radius: 15px;
+	padding: 2%;
+}
+.inSildeBorder{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ADADAD;
+	border-radius: 15px;
+}
+.iSildeBorder{
+	width: 90%;
+	height: 66%;
+	border: 1px solid #ADADAD;
+	/*border: 1px solid transparent;*/
+	margin-top: 5%;
+	margin-left: 5%;
+	text-align: center;
+	/*background: url(../images/p01.png) repeat;*/ 
+	/*background-size: 100% 100%;*/
+}
+.iSildeBorder p{
+	font-size: 2.3vh;
+	color: #666;
+}
+.iSildeBorder p:first-child{
+	line-height: 0;
+	margin-top: 10vh;
+}
+
+/*下面一条*/
+.b-conent{
+	width: 100%;
+	height: 24%;
+	display: flex;
+}
+.logo{
+	flex: 1;
+}
+.logo img{
+	width: 50%;
+	margin-top: 8%;
+}
+.sf-card{
+	flex: 1;
+	height: 100%;
+	position: relative;
+}
+.sf-card-in{
+	position: absolute;
+    top: 45%;
+    left: 10%;
+    width: 73%;
+    height: 25%;
+	border: 1px solid #ADADAD;
+	border-radius: 2px;
+	padding: 2%;
+}
+.sf-card-in-in{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ADADAD;
+	background-image: linear-gradient(-60deg,
+	transparent 0,
+	transparent 9.5%,
+	#adadad 9.5%, 
+	#adadad 10%,
+	transparent 10%,
+	transparent 19.5%, 
+	#adadad 19.5%, 
+	#adadad 20%,
+	transparent 20%,
+	transparent 29.5%,
+	#adadad 29.5%, 
+	#adadad 30%,
+	transparent 30%,
+	transparent 39.5%,
+	#adadad 39.5%, 
+	#adadad 40%,
+	transparent 40%,
+	transparent 49.5%,
+	#adadad 49.5%, 
+	#adadad 50%,
+	transparent 50%,
+	transparent 59.5%,
+	#adadad 59.5%, 
+	#adadad 60%,
+	transparent 60%,
+	transparent 69.5%,
+	#adadad 69.5%, 
+	#adadad 70%,
+	transparent 70%,
+	transparent 79.5%,
+	#adadad 79.5%, 
+	#adadad 80%,
+	transparent 80%,
+	transparent 89.5%,
+	#adadad 89.5%, 
+	#adadad 90%,
+	transparent 90%,
+	transparent 99.5%,
+	#adadad 100%);
+}
+/* 第二页 */
+.p2-top{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-animation: fadeInTop 1.3s .2s ease-out both;
+	animation-play-state: paused;
+}
+.p2-top p{
+    line-height: 2vh;
+    font-size: 2.7vh;
+}
+.p2-top p:first-child{
+    margin-top: 9vh;
+}
+.p2-bottom{
+	width: 100%;
+	position: relative;
+	margin-top: 18%;
+	z-index: 6;
+}
+.p2-img1,.p2-img2,.p2-img3,.p2-img4{
+	position: absolute;
+	width: 44%;
+	/*perspective: 602px;
+	transform: rotateX(65deg) rotateZ(-6deg);*/
+}
+.p2-img1{
+    margin-top: 11%;
+    left: 13%;
+    z-index: 9;
+    animation: fadeInUpBig 0.7s 0.6s ease-out both;
+	animation-play-state: paused;
+}
+.p2-img2{
+	margin-top: 10%;
+    right: 4%;
+    z-index: 9;
+    -webkit-animation: fadeInUpBig 0.7s 0.8s ease-out both;
+	animation-play-state: paused;
+}
+.p2-img3{
+	margin-top: 23%;
+    left: 8%;
+    z-index: 7;
+    -webkit-animation: fadeInUpBig 0.7s 1s ease-out both;
+	animation-play-state: paused;
+}
+.p2-img4{
+    margin-top: 21%;
+    right: 9%;
+    z-index: 7;
+    -webkit-animation: fadeInUpBig 0.7s 1.2s ease-out both;
+	animation-play-state: paused;
+}
+.p2-img1 img,.p2-img2 img,.p2-img3 img,.p2-img4 img{
+	width: 100%;
+}
+.p2-img4 img{
+	width: 110%;
+}
+.p2-bg{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 3;
+	-webkit-animation: fadeIn 1s 0.2s ease-out both;
+	animation-play-state: paused;
+}
+.p2-bg img{
+	width: 100%;
+}
+/*第三页*/
+.p3{
+	display: flex;
+}
+.p3-left{
+	width: 50%;
+	/*border: 1px solid #ccc;*/
+	position: relative;
+}
+.p3-right{
+	width: 50%;
+	/*border: 1px solid red;*/
+	position: relative;
+}
+.p3-img1{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-animation: fadeInDownRight 1s 0.2s ease-out both;
+	animation-play-state: paused;
+}
+.p3-img1 img{
+	width: 87%;
+}
+.p3-img2{
+	width: 31%;
+	position: absolute;
+	top: 9%;
+	left: 0;
+	-webkit-animation: fadeInLeft 1s 0.8s ease-out both;
+	animation-play-state: paused;
+}
+.p3-img2 img{
+	width: 100%;
+}
+.p3-img3{
+	width: 88%;
+	position: absolute;
+	bottom: 0%;
+	left: 0;
+	-webkit-animation: fadeInTop 1s 0.5s ease-out both;
+	animation-play-state: paused;
+}
+.p3-img3 img{
+	width: 100%;
+}
+.p3-text{
+	width: 75%;
+	position: absolute;
+	top: 32%;
+	left: 5%;
+	/*border: 1px solid red;*/
+	text-align: left;
+}
+.p3-text p{
+	line-height: 1vh;
+	font-size: 2.2vh;
+}
+.p3-text p:nth-child(1){
+	font-size: 2vh;
+	line-height: 2vh;
+	-webkit-animation: fadeInTop 1s 0.7s ease-out both;
+	animation-play-state: paused;
+}
+.p3-text p:nth-child(2){
+	font-size: 4vh;
+	font-weight: 700;
+	-webkit-animation: fadeInTop 1.2s 1s ease-out both;
+	animation-play-state: paused;
+}
+.p3-text p:nth-child(3){
+	line-height: 4vh;
+	-webkit-animation: fadeInTop 1s 1.4s ease-out both;
+	animation-play-state: paused;
+}
+.p3-text p:nth-child(4){
+	-webkit-animation: fadeInTop 1s 1.5s ease-out both;
+	animation-play-state: paused;
+}
+/*第四页*/
+.p4-top{
+	width: 130%;
+	height: 70%;
+	margin-left: -15%;
+	border: 7px solid #CBCBCB;
+	border-top: none;
+	border-radius: 0 0 100% 100%;
+	z-index: 999;
+	position: relative;
+	overflow: hidden;
+}
+.p4-container{
+	width: 70%;
+	margin-left: 15%;
+	height: 100%;
+	/*border: 1px solid red;*/
+}
+.p4 .swiper-slide img{
+	width: 100%;
+}
+.p4-bottom{
+	position: relative;
+	z-index: 1000;
+	width: 100%;
+	font-size: 5.5vh;
+	font-weight: 700;
+}
+.p4-bottom p{
+	-webkit-animation: letterSpaceing 1.5s 0.2s ease both;
+	animation-play-state: paused;
+}
+/*第五页*/
+.p5{
+	display: flex;
+}
+.p5 .left{
+	width: 40%;
+	/*border: 1px solid red;*/
+}
+.p5 .right{
+	width: 60%;
+	/*border: 1px solid red;*/
+}
+.p5-imgBox{
+	width: 100%;
+	margin-top: 14%;
+	position: relative;
+	-webkit-animation: fadeInDown 1.5s 0s ease both;
+	animation-play-state: paused;
+}
+.p5-img1{
+	width: 80%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 9;
+}
+.p5-img1 img{
+	width: 100%;
+}
+.p5-img2{
+	width: 44%;
+	position: absolute;
+	right: -6%;
+	top: 0;
+	-webkit-animation: fadeInLeft 1s 1.5s ease both;
+	animation-play-state: paused;
+}
+.p5-img2 img{
+	width: 100%;
+}
+.p5-text{
+	width: 60%;
+	margin-left: 35%;
+	margin-top: 25%;
+	text-align: left;
+	-webkit-animation: fadeInLeft 1s 1.5s ease both;
+	animation-play-state: paused;
+}
+.p5-text h5{
+	font-size: 2.5vh;
+	line-height: 2vh;
+	font-weight: 100;
+}
+.p5-text h1{
+	font-size: 5vh;
+	line-height: 3vh;
+}
+.p5-text p{
+	font-size: 4vh;
+	line-height: 0vh;
+}
+.p5-text i{
+	font-size: 1.5vh;
+}
+.p5-text span{
+	font-size: 1.8vh;
+	line-height: 1vh;
+}
+/*第六页*/
+.p6{
+	width: 100%;
+	display: flex;
+}
+.p6 .left{
+	width: 40%;
+}
+.p6 .right{
+	width: 60%;
+	-webkit-animation: fadeInRight 1s 0.2s ease both;
+	animation-play-state: paused;
+}
+.p6 .right .p6-img1{
+	position: absolute;
+	bottom: 10%;
+	left: 0%;
+	width: 80%;
+}
+.p6-text{
+	width: 60%;
+	margin-left: 35%;
+	margin-top: 10%;
+	text-align: left;
+}
+.p6-text span{
+	font-size: 2vh;
+	line-height: 1vh;
+}
+.p6-text p{
+	font-size: 3.8vh;
+	line-height: 2vh;
+	font-weight: 700;
+	border: 1px solid transparent;
+}
+.p6-text .part{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	/*border: 1px solid red;*/
+	margin-bottom: 10%;
+}
+.p6-text .part img{
+	width: 30%;
+}
+.p6-text .part span{
+	font-size: 2vh;
+	text-indent: 0.7em;
+}
+.p6-hu-1{
+    position: absolute;
+    transform: translateZ(1px);
+    animation: wifiMove 3s 0s linear infinite both;
+}
+.p6-hu-2{
+    position: absolute;
+    transform: translateZ(1px);
+    animation: wifiMove 3s 1s linear infinite both;
+}
+.p6-hu-3{
+    position: absolute;
+    transform: translateZ(1px);
+    animation: wifiMove 3s 2s linear infinite both;
+}
+

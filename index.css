@@ -1,0 +1,83 @@
+html,
+body{
+    position: relative;
+	/*border: 1px solid red;*/
+}
+
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+	/*transform: rotate(90deg);*/
+}
+*{
+	box-sizing: border-box!important;
+	transform: translateZ(1px);
+}
+
+*:before, *:after{
+	z-index: 5;
+}
+
+.iconfont {
+	font-family:"iconfont" !important;
+	font-size:16px;
+	font-style:normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+}		
+
+.swiper-container {
+	/*background-image: linear-gradieswiper-containernt(to top, #00c6fb 0%, #005bea 100%);*/
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+	/*border: 1px solid linear-gradient(to top, #00c6fb 0%, #005bea 100%);*/
+	/*transform: rotate(90deg);*/
+	position: relative;
+	/*background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);*/
+	background: url(view/images/bg.png) 100% 100% no-repeat;
+	background-size: 100% 100%;
+}
+.floatContent{
+	position: absolute;
+	/*top: 18.2%;
+	left: -39%;
+	transform: rotate(90deg);*/
+	/*第一步*/
+	/*top: 0;
+	left: 0;*/
+	/*background-color: transparent;*/
+	/*第二步*/
+}
+/* video */
+#video_div{
+	position: relative;
+	text-align:center;
+}
+.playBtn{
+	display: inline-block;
+	width: 10vw;
+	height: 10vw;
+	border: 1px solid #ccc;
+	text-align: center;
+	line-height: 10vw;
+	border-radius: 50%;
+	color:#ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -5vw;
+	margin-left: -5vw;
+}
+
+.paused{
+	-webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+}
+

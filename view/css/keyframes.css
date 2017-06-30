@@ -1,0 +1,99 @@
+.t-enter{
+	-webkit-animation: fadeInDown 1s .2s ease both;
+	animation-play-state: paused;
+}
+
+.l-enter{
+	-webkit-animation: fadeInLeft 1s 1.2s ease both;
+	animation-play-state: paused;
+}
+
+.r-enter{
+	-webkit-animation: fadeInRight 1s 2.2s ease both;
+	animation-play-state: paused;
+}
+.b-enter{
+	-webkit-animation: fadeInTop 1.3s 3s ease-out both;
+	animation-play-state: paused;
+}
+.opacity-enter{
+	-webkit-animation: fadeIn 1s 3s ease-in both;
+	animation-play-state: paused;
+}
+.d-enter{
+	-webkit-animation: d-fade 1s 3.3s ease-in both;
+	animation-play-state: paused;
+}
+@keyframes draftLine{
+	from { height: 0% }
+	to {height: 120% }
+}
+@keyframes draftLineCopy{
+	from { width: 0% }
+	to {width: 120% }
+}
+@keyframes draftLine-tl-tr{
+	from {opacity: 0; width: 0%;}
+	to {opacity: 1; width: 16%;} 
+	/*有问题*/
+}
+@-webkit-keyframes fadeOutUp{
+	0%{opacity:1; -webkit-transform:translateY(0)}
+	100%{opacity:0; -webkit-transform:translateY(20px)}
+}
+@-webkit-keyframes fadeInDown{
+	0%{opacity:0; -webkit-transform:translateY(-40px)}
+	100%{opacity:1; -webkit-transform:translateY(0)}
+}
+@-webkit-keyframes fadeInDownRight{
+	0%{opacity:0; -webkit-transform:translateY(-40px) translateX(-40px)}
+	100%{opacity:1; -webkit-transform:translateY(0)}
+}
+@-webkit-keyframes fadeInLeft{
+	0%{opacity:0; -webkit-transform:translateX(-40px)}
+	100%{opacity:1; -webkit-transform:translateX(0)}
+}
+@-webkit-keyframes fadeInRight{
+	0%{opacity:0; -webkit-transform:translateX(40px)}
+	100%{opacity:1; -webkit-transform:translateX(0)}
+}
+@-webkit-keyframes fadeInTop{
+	0%{opacity:0; -webkit-transform:translateY(40px)}
+	100%{opacity:1; -webkit-transform:translateX(0)}
+}
+
+@-webkit-keyframes loadInTop{
+	0%{opacity:0; -webkit-transform: translateX(40px) rotate(90deg);}
+	100%{opacity:1; -webkit-transform: translateX(0) rotate(90deg);}
+}
+@-webkit-keyframes loadOutUp{
+	0%{opacity:1; -webkit-transform:translateX(0) rotate(90deg);}
+	100%{opacity:0; -webkit-transform:translateX(20px) rotate(90deg);}
+}
+@-webkit-keyframes fadeIn{
+	0%{opacity:0;}
+	100%{opacity:1;}
+}
+@-webkit-keyframes d-fade{
+	0%{opacity:0; transform: perspective(400px) translateY(1000px) translateZ(1000px);}
+	100%{opacity:1; transform: perspective(400px);}
+}
+@-webkit-keyframes fadeInUpBig{
+	0%{opacity:0; -webkit-transform:translateY(200px)}
+	100%{opacity:1; -webkit-transform:translateY(0)}
+}
+@keyframes floating{
+	0%{transform: translateY(0px);}
+	25%{transform: translateY(-10px);}
+	75%{transform: translateY(10px);}
+	100%{transform: translateY(0px);}
+}
+@keyframes letterSpaceing{
+	from{letter-spacing: 30px; opacity: 0;}
+	to{letter-spacing: 5px; opacity: 1;}
+}
+@keyframes wifiMove{
+	0%{width: 40%; top: 26%; left: 18%; opacity: 0;}
+	30%{opacity: 1;}
+	100%{ width: 72%; top: 6%; left: 2%; opacity: 1;}
+}

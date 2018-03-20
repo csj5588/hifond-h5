@@ -1,5 +1,10 @@
 var loadingBox = document.getElementById('loadingBox');
 
+//var inLine = document.getElementById('in');
+//var loadText = document.querySelector('.loadText');
+//loadText.innerText = '10%';
+//inLine.style.width = '10%';
+
 
 if (Pattern == 'dev') {
 	loadingBox.style.height = window.screen.height + 'px';
